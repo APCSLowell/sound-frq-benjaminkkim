@@ -20,7 +20,7 @@ public class Sound
         samples[i] = limit;
         count++;
       }
-      if(samples[i] > -limit) {
+      if(samples[i] < -limit) {
         samples[i] = -limit;
         count++;
       }
