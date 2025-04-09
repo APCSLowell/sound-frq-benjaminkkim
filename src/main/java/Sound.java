@@ -20,7 +20,7 @@ public class Sound
         samples[i] = limit;
         count++;
       }
-      if(samples[i] < 0 && Math.abs(samples[i]) > Math.abs(limit) {
+      if(samples[i] < 0 && Math.abs(samples[i]) > Math.abs(limit)) {
         samples[i] = (limit * -1);
         count++;
       }
