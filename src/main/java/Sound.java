@@ -43,7 +43,7 @@ public class Sound
     int[] noSilence = new int[samples.length - i];
     for(int j = 0; j < noSilence.length; j++) {
       noSilence[j] = samples[j + i];
-      samples = noSilence;
     }
+    samples = noSilence;
   }
 }
