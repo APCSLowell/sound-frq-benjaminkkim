@@ -36,13 +36,13 @@ public class Sound
    *  Postcondition: the length of samples reflects the removal of starting silence
    */
   public void trimSilenceFromBeginning() {
-    int count = 0;
-    while(samples[count] == 0) {
-      count++;
+    int i = 0;
+    while(samples[i] == 0) {
+      i++;
     }
-    int[] noSilence = new int[samples.length - count];
-    for(int j = 0; j < noSilence.length; j++) {
-      noSilence[j] = samples[j + count];
+    int[] noSilence = new int[samples.length - i];
+    for(int j = 1; j < noSilence.length; j++) {
+      noSilence[j] = samples[j + i];
       samples = noSilence;
     }
   }
